@@ -1,0 +1,104 @@
+/******************************************
+/* BASE STYLES
+/*******************************************/
+body {
+  background: #1F0F53;
+}
+
+.logo {
+  width: 36px;
+  height: 36px;
+  margin-top: 5px;
+  margin-left: 0;
+}
+
+.navLogo {
+  width: 50%;
+}
+
+.navHeader {
+  width: 50%;
+}
+
+.slogan {
+  color: #FF5DB2;
+  font-variant: small-caps;
+}
+
+.nav-link {
+  border: 5px solid #15B5B0;
+  border-radius: 15px;
+  color: #ff5db2;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+  margin: 5px;
+}
+
+.nav-link:hover {
+  color: #15B5B0;
+}
+
+.centerSection {
+  padding-top: 100px;
+}
+
+.leftFront {
+  width: 50%;
+  height: 500px;
+  padding-top: 250px;
+}
+
+.rightFront {
+  width: 50%;
+  height: 500px;
+}
+
+.col-3 {
+  border: 5px solid #15B5B0;
+  background: none;
+  border-radius: 15px;
+  color: #ff5db2;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.col-3:hover {
+  color: #15B5B0;
+  background: none;
+  border: 5px solid #15B5B0;
+}
+
+/******************************************
+/* FRONT PAGE NAV LAYOUT
+/*******************************************/
+
+
+.logo{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.navLogo {
+  float: left;
+}
+
+.navHeader {
+  float: right;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+.leftFront {
+  float: left;
+}
+
+.rightFront {
+  float: right;
+}
+
+.indexLogin {
+  width: 100%;
+}
