@@ -12,17 +12,11 @@ body {
   margin-left: 0;
 }
 
-.navLogo {
-  width: 50%;
-}
-
-.navHeader {
-  width: 50%;
-}
-
 .slogan {
   color: #FF5DB2;
   font-variant: small-caps;
+  font-size: 3.5rem;
+  justify-content: center;
 }
 
 .nav-link {
@@ -54,6 +48,12 @@ body {
   height: 500px;
 }
 
+.indexLogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .col-3 {
   border: 5px solid #15B5B0;
   background: none;
@@ -61,6 +61,7 @@ body {
   color: #ff5db2;
   font-weight: bold;
   font-size: 18px;
+  height: fit-content;
 }
 
 .col-3:hover {
@@ -69,18 +70,70 @@ body {
   border: 5px solid #15B5B0;
 }
 
-/******************************************
-/* FRONT PAGE NAV LAYOUT
-/*******************************************/
+.loginTitle {
+  color: #FFDB99
+}
 
+.mb-3 {
+  color:#FF5DB2;
+}
+
+.btn-primary {
+  border: 5px solid #15B5B0;
+  background: none;
+  border-radius: 15px;
+  color: #ff5db2;
+  font-weight: bold;
+  font-size: 18px;
+  width: fit-content;
+}
+
+.form-text {
+  color: #FFDB99
+}
+
+.mt-5 {
+  color: #FFDB99;
+}
+
+/******************************************
+/* FRONT PAGE NAV STYLE & LAYOUT
+/*******************************************/
 
 .logo{
   display: flex;
   justify-content: flex-start;
+  height: auto;
+  width: 30%;
 }
 
 .navLogo {
   float: left;
+  padding-top: 10px;
+}
+
+header .container {
+  justify-content: center;
+}
+
+/******************************************
+/* LOGGED IN PAGE NAV STYLE & LAYOUT
+/*******************************************/
+
+.nav {
+  padding-top: 10px;
+}
+
+.navbar-text {
+  color: #FFDB99;
+  display: flex;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.navbar-text:hover {
+  color: #ff5db2;
+  background: none;
 }
 
 .navHeader {
@@ -97,8 +150,14 @@ body {
 
 .rightFront {
   float: right;
+
+}
+
+.slogan {
+  display: flex;
 }
 
 .indexLogin {
   width: 100%;
+
 }
