@@ -33,14 +33,15 @@ body {
   color: #15B5B0;
 }
 
-.centerSection {
-  padding-top: 100px;
+.slogan {
+  text-align: center;
+  padding-top: 50px;
 }
 
 .leftFront {
   width: 50%;
   height: 500px;
-  padding-top: 250px;
+  padding-top: 150px;
 }
 
 .rightFront {
@@ -112,15 +113,11 @@ body {
   padding-top: 10px;
 }
 
-header .container {
-  justify-content: center;
-}
-
 /******************************************
 /* LOGGED IN PAGE NAV STYLE & LAYOUT
 /*******************************************/
 
-.nav {
+.navHeader {
   padding-top: 10px;
 }
 
@@ -159,5 +156,4 @@ header .container {
 
 .indexLogin {
   width: 100%;
-
 }
