@@ -5,14 +5,57 @@
     <div class="row mt-5">
         <div class="col-6">
             <div class="mt-5">
-              <h2>Add a post</h2>
+              <h2 class="mb-3">Add a cocktail</h2>
               <form action="/post/createPost" enctype="multipart/form-data" method="POST">
                 <div class="mb-3">
-                    <label for="title" class="form-label">Title</label>
+                    <label for="title" class="form-label">Cocktail Name</label>
                     <input type="text" class="form-control" id="title" name="title">
                 </div>
                 <div class="mb-3">
-                  <label for="caption" class="form-label">Caption</label>
+                  <label for="country" class="form-label">Ingredients</label>
+                  <select class="form-select" aria-label="Default select example" id="country" name="country">
+                    <option selected>Select a Spirit</option>
+                    <option value="Tequila">Tequila</option>
+                    <option value="Bolivia 🇧🇴">Bolivia</option>
+                    <option value="Brazil 🇧🇷">Brazil</option>
+                    <option value="Chile 🇨🇱">Chile</option>
+                    <option value="Colombia 🇨🇴">Colombia</option>
+                    <option value="Costa Rica 🇨🇷">Costa Rica</option>
+                    <option value="Cuba 🇨🇺">Cuba</option>
+                    <option value="Domincan Republic 🇩🇴">Dominican Republic</option>
+                    <option value="Ecuador 🇪🇨">Ecuador</option>
+                    <option value="El Salvador 🇸🇻">El Salvador</option>
+                    <option value="Guatemala 🇬🇹">Guatemala</option>
+                    <option value="Honduras 🇭🇳">Honduras</option>
+                    <option value="México 🇲🇽">México</option>
+                    <option value="Nicaragua 🇳🇮">Nicaragua</option>
+                    <option value="Panamá 🇵🇦">Panamá</option>
+                    <option value="Paraguay 🇵🇾">Paraguay</option>
+                    <option value="Perú 🇵🇪">Perú</option>
+                    <option value="Puerto Rico 🇵🇷">Puerto Rico</option>
+                    <option value="Uruguay 🇺🇾">Uruguay</option>
+                    <option value="Venezuela 🇻🇪">Venezuela</option>
+                  </select>
+                  </div>
+                  <div class="mb-3">
+                <label for="basic-url" class="form-label">Cocktail Type</label>
+                <select class="form-select" aria-label="Default select example" id="dish" name="dish">
+                  <option selected>Please Select</option>
+                  <option value="Main Dish">Tropical</option>
+                  <option value="Side Dish">Stiff</option>
+                  <option value="Salsa">Shot</option>
+                  <option value="Appetizer">Appetizer</option>
+                  <option value="Snack">Snack</option>
+                  <option value="Dessert">Dessert</option>
+                  <option value="Drink">Drink</option>
+                </select>
+                </div>
+                <div class="mb-3">
+                  <label for="ingredients" class="form-label">Ingredients</label>
+                  <textarea class="form-control" id="ingredients" name="ingredients" placeholder="Put each ingredient on its own line." rows="5"></textarea>
+                </div>
+                <div class="mb-3">
+                  <label for="caption" class="form-label">Description</label>
                   <textarea class="form-control" id="caption" name="caption"></textarea>
                 </div>
                 <div class="mb-3">

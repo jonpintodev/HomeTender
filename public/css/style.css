@@ -72,12 +72,10 @@ body {
 }
 
 .loginTitle {
-  color: #FFDB99
+  color: #ff5db2
 }
 
-.mb-3 {
-  color:#FF5DB2;
-}
+
 
 .btn-primary {
   border: 5px solid #15B5B0;
@@ -110,15 +108,19 @@ body {
 
 .navLogo {
   float: left;
-  padding-top: 10px;
+  justify-content: flex-start;
 }
 
+header .container {
+}
 /******************************************
 /* LOGGED IN PAGE NAV STYLE & LAYOUT
 /*******************************************/
 
 .navHeader {
-  padding-top: 10px;
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .navbar-text {
@@ -135,6 +137,14 @@ body {
 
 .navHeader {
   float: right;
+}
+
+/******************************************
+/* PROFILE STYLE & LAYOUT
+/*******************************************/
+
+h2.mb-3 {
+  color: #ff5db2;
 }
 
 /******************************************
