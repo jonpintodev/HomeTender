@@ -8,46 +8,146 @@
               <h2 class="mb-3">Add a cocktail</h2>
               <form action="/post/createPost" enctype="multipart/form-data" method="POST">
                 <div class="mb-3">
-                    <label for="title" class="form-label">Cocktail Name</label>
-                    <input type="text" class="form-control" id="title" name="title">
+                  <label for="title" class="form-label">Cocktail Name</label>
+                  <input type="text" class="form-control" id="title" name="title">
                 </div>
                 <div class="mb-3">
-                  <label for="country" class="form-label">Ingredients</label>
-                  <select class="form-select" aria-label="Default select example" id="country" name="country">
+                  <label for="spirit" class="form-label">Ingredients</label>
+                  <select class="form-select" aria-label="Default select example" id="spirit" name="spirit">
                     <option selected>Select a Spirit</option>
+                    <option value="Vodka">Vodka</option>
+                    <option value="Rum">Rum</option>
+                    <option value="Gin">Gin</option>
                     <option value="Tequila">Tequila</option>
-                    <option value="Bolivia 🇧🇴">Bolivia</option>
-                    <option value="Brazil 🇧🇷">Brazil</option>
-                    <option value="Chile 🇨🇱">Chile</option>
-                    <option value="Colombia 🇨🇴">Colombia</option>
-                    <option value="Costa Rica 🇨🇷">Costa Rica</option>
-                    <option value="Cuba 🇨🇺">Cuba</option>
-                    <option value="Domincan Republic 🇩🇴">Dominican Republic</option>
-                    <option value="Ecuador 🇪🇨">Ecuador</option>
-                    <option value="El Salvador 🇸🇻">El Salvador</option>
-                    <option value="Guatemala 🇬🇹">Guatemala</option>
-                    <option value="Honduras 🇭🇳">Honduras</option>
-                    <option value="México 🇲🇽">México</option>
-                    <option value="Nicaragua 🇳🇮">Nicaragua</option>
-                    <option value="Panamá 🇵🇦">Panamá</option>
-                    <option value="Paraguay 🇵🇾">Paraguay</option>
-                    <option value="Perú 🇵🇪">Perú</option>
-                    <option value="Puerto Rico 🇵🇷">Puerto Rico</option>
-                    <option value="Uruguay 🇺🇾">Uruguay</option>
-                    <option value="Venezuela 🇻🇪">Venezuela</option>
+                    <option value="Absinthe">Absinthe</option>
+                    <option value="Akvavit">Akvavit</option>
+                    <option value="American Whiskey">American Whiskey</option>
+                    <option value="Applejack">Applejack</option>
+                    <option value="Arak">Arak</option>
+                    <option value="Armagnac">Armagnac</option>
+                    <option value="Arrack">Arrack</option>
+                    <option value="Awamori (Japan)">Awamori (Japan)</option>
+                    <option value="Baijiu/Shaojiu (China)">Baijiu/Shaojiu (China)</option>
+                    <option value="Bezovice">Bezovice</option>
+                    <option value="Borovička">Borovička</option>
+                    <option value="Brandy">Brandy</option>
+                    <option value="Cachaça">Cachaça</option>
+                    <option value="Calvados">Calvados</option>
+                    <option value="Canadian Whisky">Canadian Whisky</option>
+                    <option value="Chambord">Chambord</option>
+                    <option value="Cognac">Cognac </option>
+                    <option value="Damassine">Damassine</option>
+                    <option value="Damson Gin">Damson Gin</option>
+                    <option value="Eau-de-vie (French origin)">Eau-de-vie (French origin)</option>
+                    <option value="Freya Birch Spirit (Norway)">Freya Birch Spirit (Norway)</option>
+                    <option value="Geist">Geist</option>
+                    <option value="Herbsaint">Herbsaint</option>
+                    <option value="Himbeergeist">Himbeergeist</option>
+                    <option value="Horilka/Samohon">Horilka/Samohon</option>
+                    <option value="Hruškovice">Hruškovice</option>
+                    <option value="Irish Whiskey">Irish Whiskey</option>
+                    <option value="Japanese Whisky">Japanese Whisky</option>
+                    <option value="Jenever/Genever">Jenever/Genever</option>
+                    <option value="Kaoliang/Gaoling/Sorghum Liquor">Kaoliang/Gaoling/Sorghum Liquor</option>
+                    <option value="Kirsch">Kirsch</option>
+                    <option value="Lambig">Lambig</option>
+                    <option value="Mamajuana">Mamajuana</option>
+                    <option value="ManX Spirit (UK)">ManX Spirit (UK)</option>
+                    <option value="Maotai?Moutai">Maota/Moutai</option>
+                    <option value="Medronho">Medronho</option>
+                    <option value="Metaxa">Metaxa</option>
+                    <option value="Mezcal">Mezcal</option>
+                    <option value="Mirin (Japan)">Mirin (Japan)</option>
+                    <option value="Ogogoro (Nigeria)">Ogogoro (Nigeria)</option>
+                    <option value="Pálenka">Pálenka</option>
+                    <option value="Pisco">Pisco (Chile/Peru)</option>
+                    <option value="Poire Williams">Poire Williams</option>
+                    <option value="Poitín/Potcheen/Poteen/Potheen">Poitín/Potcheen/Poteen/Potheen</option>
+                    <option value="Puncheon Rum">Puncheon Rum</option>
+                    <option value="Slivovice">Slivovice</option>
+                    <option value="Rakia">Rakia</option>
+                    <option value="Rakı">Rakı</option>
+                    <option value="Rhum Agricole (French Caribbean Islands)">Rhum Agricole (French Caribbean Islands)</option>
+                    <option value="Rye Whiskey">Rye Whiskey</option>
+                    <option value="Schnapps">Schnapps</option>
+                    <option value="Shōchū (Japan)">Shōchū (Japan)</option>
+                    <option value="Singani">Singani</option>
+                    <option value="Slivovitz">Slivovitz</option>
+                    <option value="Sloe Gin (England)">Sloe Gin (England)</option>
+                    <option value="Soju (Korea)">Soju (Korea)</option>
+                    <option value="Tennessee Whiskey">Tennessee Whiskey</option>
+                    <option value="Texas Whiskey">Texas Whiskey</option>
+                    <option value="Törkölypálinka">Törkölypálinka</option>
+                    <option value="Whiskey">Whiskey</option>
+                    <option value="Williamine">Williamine</option>
+                    <option value="Ţuică">Ţuică</option>
                   </select>
-                  </div>
-                  <div class="mb-3">
+                  <select class="form-select" aria-label="Default select example" id="liquor" name="liquer">
+                    <option selected>Select a Liqueur</option>
+                    <option value="99 Berries">99 Berries</option>
+                    <option value="99 Bananas">99 Bananas</option>
+                    <option value="Advocaat">Advocaat</option>
+                    <option value="After Shock">After Shock</option>
+                    <option value="Agnes">Agnes</option>
+                    <option value="Aguardente (Brazil)Portugal)">Aguardente (Brazil))</option>
+                    <option value="Aguardente (Portugal)">Aguardente (Portugal)</option>
+                    <option value="Aguardiente (Chile)">Aguardiente (Chile)</option>
+                    <option value="Aguardiente (Colombia)">Aguardiente (Colombia)</option>
+                    <option value="Aguardiente (Mexico)">Aguardiente (Mexico)</option>
+                    <option value="Agwa de Bolivia">Agwa de Bolivia</option>
+                    <option value="Allasch">Allasch</option>
+                    <option value="Altvater">Altvater</option>
+                    <option value="Amaretto ">Amaretto </option>
+                    <option value="Amaro">Amaro</option>
+                    <option value="Amarula ">Amarula</option>
+                    <option value="Anisette">Anisette</option>
+                    <option value="Armada">Armada</option>
+                    <option value="Aurum">Aurum</option>
+                    <option value="Bailey's Irish Cream">Bailey's Irish Cream</option>
+                    <option value="Bajtra">Bajtra</option>
+                    <option value="Bärenfang">Bärenfang</option>
+                    <option value="Bärenjäger">Bärenjäger</option>
+                    <option value="Barrow's Intense Ginger Liqueur">Barrow's Intense Ginger Liqueur</option>
+                    <option value="Becherovka">Becherovka</option>
+                    <option value="Beechleaf">Beechleaf</option>
+                    <option value="Bénédictine">Bénédictine</option>
+                    <option value="Beirão">Beirão</option>
+                    <option value="Bloody Oath">Bloody Oath</option>
+                    <option value="Boilo">Boilo</option>
+                    <option value="Bruadar">Bruadar</option>
+                    <option value="Calisaya">Calisaya </option>
+                    <option value="Campari">Campari</option>
+                    <option value="Canton">Canton</option>
+                    <option value="Carolans">Carolans</option>
+                    <option value="Centerbe">Centerbe</option>
+                    <option value="Chambord">Chambord</option>
+                    <option value="Chartreuse">Chartreuse</option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                  </select>
+                </div>
+                <div class="mb-3">
                 <label for="basic-url" class="form-label">Cocktail Type</label>
-                <select class="form-select" aria-label="Default select example" id="dish" name="dish">
+                <select class="form-select" aria-label="Default select example" id="cocktail-type" name="cocktail-type">
                   <option selected>Please Select</option>
-                  <option value="Main Dish">Tropical</option>
-                  <option value="Side Dish">Stiff</option>
-                  <option value="Salsa">Shot</option>
-                  <option value="Appetizer">Appetizer</option>
-                  <option value="Snack">Snack</option>
-                  <option value="Dessert">Dessert</option>
-                  <option value="Drink">Drink</option>
+                  <option value="Tropical">Tropical</option>
+                  <option value="Sweet">Sweet</option>
+                  <option value="Stiff">Stiff</option>
+                  <option value="Shot">Shot</option>
                 </select>
                 </div>
                 <div class="mb-3">
